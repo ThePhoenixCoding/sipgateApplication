@@ -12,7 +12,7 @@ def generateAndSavePredictionsAsImages(model):
 	print("Generating predictions.")
 	data = Dataprocessing.prepareDataForTraining()
 	dataWithPredictions = createPredictionsForWholeData(model, data)
-	print(f"Saving predictions in {outputPath}")
+	print(f"Saving predictions in {outputPath}.")
 	savePredictedDataAsImage(dataWithPredictions, outputPath)
 
 def createPredictionsForWholeData(model, wholeData):
